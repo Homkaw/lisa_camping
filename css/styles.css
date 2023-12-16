@@ -1,0 +1,741 @@
+/* Общие настройки */
+body {
+    font-family:Orelega One;
+    font-size: 30px;
+    font-weight: 400;
+	font-style: normal;
+	line-height: normal;
+	background-color: #3F4F04;
+}
+
+button{
+	color: #FFF;
+	border-radius: 17px;
+	background: #3F4F04;
+	transition: .5s linear;
+}
+
+button:hover{
+	background-color: rgb(100, 125, 10)
+}
+
+button:active{
+	background-color: #2B3603;
+
+}
+
+.conteiner{
+    padding:0 59px;
+    margin: 0 auto;
+	width: 100%;
+}
+
+p{
+	font-size: 30px;
+}
+
+/* Header */
+
+.header {
+    padding:20px 0;
+    width: 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Logo {
+	color: #FFF;
+    font-size: 50px;
+	flex-shrink: 0;
+}
+
+.header__nav ul{
+    display: flex;
+}
+
+
+.header__nav li + li {
+    margin-left: 40px;
+}
+
+a{
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	outline: none;
+	transition: .5s linear;
+    color: #FFF;
+	font-size: 30px;
+}
+
+.header__nav a:hover{
+    color: #4F80A8;
+}
+
+.header__nav a:active{
+    color: #4F80A8;
+}
+
+
+.topmenu > li {
+	display: inline-block;
+	margin-right: 0px;
+	position:relative;
+}
+.topmenu > li:last-child {
+		margin-right: 0;
+}
+
+
+ul a {
+	color: #74924C;
+}
+.submenu {
+	visibility: hidden;
+	opacity: 0;
+	background:  #3F4F04;
+}
+ul li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+}
+
+.fa {
+	color: #3F4F04;
+	padding-left: 10px;
+}
+.submenu {
+	position:absolute;
+	top: 100%;
+	left: 0px;
+	width: 100%;
+
+
+}
+ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0;
+}
+
+/* Слайдер */
+.aperekoden_slayda{
+	height: 705px;
+	width: 100%;
+
+}
+
+.aperekoden_slayda .smena_slada{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka:nth-child(1){
+	-webkit-animation: sliderFade-1 15s linear infinite;
+	animation: sliderFade-1 15s linear infinite;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka:nth-child(2){
+	-webkit-animation: sliderFade-2 15s linear infinite;
+	animation: sliderFade-2 15s linear infinite;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka:nth-child(3){
+-webkit-animation: sliderFade-3 15s linear infinite;
+animation: sliderFade-3 15s linear infinite;
+}
+
+ul div{
+	color: #FFF;
+	padding-top: 10%;
+	padding-left: 60%;
+	padding-right: 152px;
+	font-size: 100px
+}
+
+ul div button{
+	transition: .5s linear;
+	color: #FFF;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 18px 30px;
+	border-radius: 17px;
+	background: #3F4F04;
+	font-size: 50px
+}
+
+@-webkit-keyframes sliderFade-1{
+	0%{
+	opacity: 1 }
+
+	15%{
+	opacity: 1 }
+
+	30%{
+	opacity: .5 }
+
+	45%{
+	opacity:0 }
+
+	60%{
+	opacity:0 }
+
+	75%{
+	opacity:0 }
+
+	90%{
+	opacity:0 }
+
+	100%{
+	opacity:1 }
+
+}
+
+@-webkit-keyframes sliderFade-2{
+	0%{
+	opacity: 0 }
+
+	15%{
+	opacity: 0 }
+
+	45%{
+	opacity: 1 }
+
+	60%{
+	opacity: 1 }
+
+	75%{
+	opacity: 0 }
+
+	90%{
+	opacity: 0 }
+
+	100%{
+	opacity: 0 }
+
+}
+
+@-webkit-keyframes sliderFade-3{
+	0%{
+	opacity: 0 }
+
+	15%{
+	opacity: 0 }
+
+	30%{
+	opacity: 0 }
+
+	45%{
+	opacity: 0 }
+
+	60%{
+	opacity: 0 }
+
+	75%{
+	opacity: 1 }
+
+	90%{
+	opacity: 1 }
+
+	100%{
+	opacity: 0 }
+
+}
+
+/* Наши туры */
+
+.title{
+	padding: 45px 0;
+	text-align: center;
+	font-size: 100px;
+	color: #FFF;
+	
+}
+
+.card{
+	width: 380px;
+	height: auto;
+	background-color: #FFF;
+	border-radius: 17px;
+	margin: 0px 30px 30px 0px;
+	display: inline-block;
+}
+
+.cards{
+	border-spacing: 20px 20px;
+	display: flex;
+	justify-content: center;
+}
+
+h3{
+	font-size: 40px;
+	padding: 5px 35px;
+}
+
+span{
+	color: #4F80A8;
+	font-size: 40px;
+	padding: 5px;
+
+}
+
+.card .p {
+	padding: 0 35px;
+	font-size: 28px;
+}
+
+.zena{
+	font-size: 40px;
+	padding: 5px 35px;
+}
+
+
+
+.card button{
+	margin: 10px 35px;
+	padding: 10px 35px;
+}
+
+.card img{
+	width: 100%;
+	height: 200px;
+	border-radius: 17px;
+}
+
+
+
+/* Фон картинками */
+.fon__img img{
+	height: 100%;
+	width: 100%;
+}
+
+/* Что говорят люди */
+
+
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+	margin-left: 10%  	;
+	
+}
+
+.clients__item {
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.clients__photo {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.clients__name {
+    margin-bottom: 5px;
+
+	font-size: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+
+.clients__text {
+    font-size: 30px;
+    color: #ffffff;
+	width: 247px;
+
+}
+
+.clients__text:before {
+    content: "";
+    display: block;
+    width: 105%;
+    height: 3px;
+    margin: 15px 0;
+
+    background-color: #4F80A8;
+}
+
+
+/* ПОдвал с детьми */
+footer{
+	
+	display: flex;
+	height: auto;
+	justify-content: center;
+}
+
+.section1{
+	margin: 20px 90px;
+	width: 340px;
+	display: inline-block;
+	vertical-align: top;
+}
+.section1 h4{
+	padding: 20px 0;
+	text-align: center;
+	font-size: 40px;
+	color: #FFF;
+}
+
+input{
+	border-radius: 50px;
+	width: 340px;
+	padding: 5px 0;
+	text-align: center;
+	text-size-adjust: 0px;
+}
+
+.section1 .footer{
+	margin: 10px 0;
+	padding: 5px ;
+	width: 340px;
+	border-radius: 50px;
+	background-color: #4F80A8;
+	text-size-adjust: 30px;
+}
+
+.section1 .footer:hover{
+	background-color: #5EABEA;
+}
+
+
+
+.section1 .footer:active{
+	background-color: #33526C;
+}
+
+
+
+
+
+
+
+li a{
+    color: #ffffff;
+	font-size: 30px;
+}
+
+
+.section2 a{
+	padding: 10px 0;
+}
+a:hover{
+    color: #4F80A8;
+}
+
+a:active{
+    color: #4F80A8;
+}
+
+.section2{
+	margin: 20px 50px;
+	width: 230px;
+	display: inline-block;
+
+}
+
+.section2 h4{
+	padding: 20px 0;
+	text-align: left;
+	font-size: 40px;
+	color: #FFF;
+}
+
+.section3{
+	margin: 50px 50px;
+	width: 200px;
+	display: inline-block;
+	height: auto;
+}
+
+.bt{
+	margin: 30px 0px;
+	padding: 10px 10px;
+	background-color: #4F80A8;
+}
+
+.bt:hover{
+	background-color: #5EABEA;
+}
+
+
+.bt:active{
+	background-color: #33526C;
+}
+.section3 img{
+	margin: 0 2px;
+}
+
+.section3 img:first-child:hover{
+	background-color: #4bc712af;
+	
+}
+
+
+.section3 a .s:hover{
+	background-color: #5EABEA;
+	
+}
+
+.section3 a .t:hover{
+	background-color: #000000bb;
+	
+}
+.section3 .a{
+	display:inline;
+	padding: 0;
+}
+
+/* Черная полоса */
+.black{
+	width: 100%;
+	background-color: #000;
+}
+
+h5{
+	color: #FFF;
+	text-align: center;
+	font-size: 20px;
+	padding: 10px 0;
+}
+
+
+@media(max-width:768px){
+	ul div{
+		font-size: 70px;
+		padding: 0 0 0 0;
+	}
+}
+
+@media(max-width:390px){
+	.submenu{
+		width: 110%;
+	}
+	.conteiner{
+		padding: 0 25px;
+	}
+	
+	.li{
+		padding: auto 10px;
+	}
+	
+	li a{
+		font-size: 17px;
+		padding: 0 15px;
+	}
+	.Logo{
+		font-size: 30px;
+		
+	}
+	
+	ul div {
+		font-size: 60px;
+		padding-top: 50%;
+		text-align: center;
+	}
+	ul div button{
+		transition: .5s linear;
+		color: #FFF;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 18px 30px;
+		border-radius: 17px;
+		background: #3F4F04;
+		font-size: 35px
+	}
+	.title{
+		font-size: 70px;
+		padding: 30px 0;
+	}
+	.cards{
+		display:block;
+	}
+	.card{
+		padding: 0 auto;
+		margin: 7% auto;
+		display: block;
+		width: 310px;
+	}
+	.zena{
+		font-size: 30px;
+	}
+	.card button{
+		margin: 15px 25px;
+		padding: 10px 55px;
+	}
+	.clients__name{
+		font-size: 25px;
+	}
+	.clients__text{
+		font-size: 25px;
+		width: 100px;
+	}
+	footer{
+		max-width: 340px;
+		display: block;
+		height: auto;
+	}
+	.section1{
+		margin: 0 10px ;
+		width: 340px;
+	}
+	
+	
+	footer h4{
+		font-size: 35px;
+		text-align: center;
+	}
+	footer a{
+		font-size: 25px;
+	}
+	.section2{
+		margin: 0 35px;
+	}
+	.section3{
+		margin: 0 35px;
+	}
+}
+
+
+@media(max-width:500px){
+	.submenu{
+		width: 110%;
+	}
+	ul li:active .submenu{
+		visibility: visible;
+		opacity: 1;
+	}
+	.conteiner{
+		padding: 0 25px;
+	}
+	
+	.li{
+		padding: 0px 20px;
+	}
+	
+	li a{
+		font-size: 22px;
+		padding: 0 15px;
+	}
+	.Logo{
+		
+		font-size: 40px;
+		
+	}
+	
+	ul div {
+		font-size: 90px;
+		padding-top: 60%;
+		text-align: center;
+	}
+	ul div button{
+		transition: .5s linear;
+		color: #FFF;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 20px 55px;
+		border-radius: 17px;
+		background: #3F4F04;
+		font-size: 45px
+	}
+	.aperekoden_slayda{
+		height: 896px;
+		width: 100%;
+	}
+	.title{
+		font-size: 80px;
+		padding: 30px 0;
+	}
+	.cards{
+		display:block;
+	}
+	.card{
+		padding: 0 auto;
+		margin: 7% auto;
+		display: block;
+		width: 310px;
+	}
+	
+	.zena{
+		font-size: 40px;
+		margin-bottom: 0px;
+	}
+	h3{
+		font-size: 50px;
+	}
+	.card .p {
+		padding: 0 35px;
+		font-size: 33px;
+	}
+	.card button{
+		margin: 15px 25px;
+		padding: 10px 55px;
+	}
+	.clients__name{
+		font-size: 25px;
+	}
+	.clients__text{
+		font-size: 25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	footer{
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+	.section1{
+		margin: 0 35px ;
+		width: 340px;
+	}
+	
+	
+	footer h4{
+		font-size: 35px;
+		text-align: center;
+	}
+	footer a{
+		font-size: 25px;
+	}
+	.section2{
+		margin: 0 35px;
+	}
+	.section3{
+		padding: 0 auto;
+		margin: 0 auto;
+		display: block;
+	}
+
+}
